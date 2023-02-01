@@ -5,11 +5,9 @@
       <configuration>
         <autoDetectTypes>
           <platformType>SPIGOT</platformType>
+          <platformType>BUNGEECORD</platformType>
         </autoDetectTypes>
       </configuration>
     </facet>
-  </component>
-  <component name="McpModuleSettings">
-    <option name="srgType" value="SRG" />
   </component>
 </module>

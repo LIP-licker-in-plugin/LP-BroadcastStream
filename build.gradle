@@ -50,7 +50,7 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:R0.1:1.19.2'
     compileOnly 'org.spigotmc:spigot:R0.1:1.19.2'
     compileOnly 'com.darksoldier1404.dppc:DPP-Core:1.19.2-SNAPSHOT'
-    compileOnly 'net.md-5:bungeecord-api:1.19.3-R0.1-SNAPSHOT'
+    compileOnly 'net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT'
 }
 
 task DS_BUILD {
