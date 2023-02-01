@@ -2,7 +2,7 @@ name: DP-BroadcastStream
 version: 1.0.0.0
 main: com.darksoldier1404.dbs.BroadcastStream
 authors: [ DEAD_POOLIO_ ]
-api-version: 1.18
+api-version: 1.19
 depend:
   - DPP-Core
 commands:
