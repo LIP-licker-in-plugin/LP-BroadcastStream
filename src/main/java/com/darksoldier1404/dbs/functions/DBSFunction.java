@@ -88,7 +88,7 @@ public class DBSFunction {
         TextComponent message = new TextComponent(ColorUtils.applyColor(initPlaceholder(plugin.data.getConfig().getString("Settings.liveAnnouncementMessage"), s, id)));
         message.setClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://www.twitch.tv/" + id));
         Bukkit.getOnlinePlayers().forEach(p -> {
-            p.spigot().sendMessage(message);
+            p.sendMessage(message.getText());
             if (plugin.data.getConfig().getBoolean("Settings.use-liveAnnouncementTitleMessage")) {
                 String title = ColorUtils.applyColor(initPlaceholder(plugin.data.getConfig().getString("Settings.liveAnnouncementTitleMessage.title"), s, id));
                 String subTitle = ColorUtils.applyColor(initPlaceholder(plugin.data.getConfig().getString("Settings.liveAnnouncementTitleMessage.subTitle"), s, id));
