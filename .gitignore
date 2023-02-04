@@ -1,0 +1,18 @@
+# Project exclude paths
+/.gradle/
+/build/
+/build/classes/java/main/
+/v1_12_2/build/
+/v1_12_2/build/classes/java/main/
+/v1_13_2/build/
+/v1_13_2/build/classes/java/main/
+/v1_14_4/build/
+/v1_14_4/build/classes/java/main/
+/v1_15_2/build/
+/v1_15_2/build/classes/java/main/
+/v1_16_5/build/
+/v1_16_5/build/classes/java/main/
+/v1_17_1/build/
+/v1_17_1/build/classes/java/main/
+/v1_18_2/build/
+/v1_18_2/build/classes/java/main/

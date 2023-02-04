@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+}
+
+group 'com.darksoldier1404'
+version = '1.0.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+configurations {
+    jar.archiveName = rootProject.name + '-_' + name + '-' + version + '.jar'
+}
+jar {
+    destinationDirectory.set(file("$rootDir/jars"))
+}
+
+build {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://feather-s.kr:8083/repository/maven-public/"
+        allowInsecureProtocol = true
+    }
+    maven {
+        url "http://feather-s.kr:8083/repository/dpp-releases/"
+        allowInsecureProtocol = true
+    }
+
+    maven {
+        url "http://licker.ddns.net:8081/repository/dpp/"
+        allowInsecureProtocol = true
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:23.0.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    compileOnly 'org.spigotmc:spigot-api:R0.1:1.12.2'
+    compileOnly 'org.bukkit.craftbukkit:craftbukkit:R0.1:1.12.2'
+    compileOnly 'com.darksoldier1404.dppc:DPP-Core:1.12.2-SNAPSHOT'
+}

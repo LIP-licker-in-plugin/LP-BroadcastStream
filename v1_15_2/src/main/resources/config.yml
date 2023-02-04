@@ -1,0 +1,27 @@
+# https://www.twitch.tv/deadpoolio1404 팔로우 부탁드립니당 ;)
+
+Settings:
+  prefix: "&f[ &6DBS &f] "
+
+  # 방송 추적에 등록된 스트리머 목록
+  # deadpoolio1404 이건 플러그인 개발자의 트위치 아이디입니다. 안지우시면 제 방송도 홍보됩니다? ㅋㅋ
+  registeredStreamer:
+    deadpoolio1404:
+      UUID: 43fe4eb8-b5fc-4032-a7e8-5f9a8cf662e7
+
+  # 방송 알림 채팅 메시지 커스터마이징
+  # 플레이스 홀더 : <streamer> <title> <viewers> <game> <uptime> <url>
+  liveAnnouncementMessage: "&f[ &6DBS &f] &a<streamer> &f님이 방송을 시작하였습니다! : <title> | <game> | <uptime>"
+  # 방송 알림 타이틀 메시지 커스터마이징
+  use-liveAnnouncementTitleMessage: true
+  liveAnnouncementTitleMessage:
+    title: "<streamer> ON AIR"
+    subTitle: "<title> | <game> | <uptime>"
+    fadeIn: 10
+    stay: 40
+    fadeOut: 10
+
+  # 방송 채팅 메시지 커스터마이징
+  # 플레이스 홀더 : <message> <nickname> <streamer>
+  messageToMinecraft: "[ &b<streamer> 님의 방송 &f] <nickname>: <message>"
+  messageToTwitch: "<nickname>: <message>"
